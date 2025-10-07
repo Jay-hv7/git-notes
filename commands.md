@@ -66,6 +66,17 @@ If conflicts: fix in editor → git add → git commit
 ### Remote
 git remote add origin https://github.com/Jay-hv7/git-notes.git
 git push origin master
+git pull origin master (to pull from remote repo)
+git clone url (copy remote repo)
+
+### Tagging version
+git tag -a v1.0 <sha(optional)
+Vim editor: Fn+insert --- write a message
+:wq save and quite
+git log (check if tagging done successfully)
+git tag -d v1.0 (delete the mentioned tag)
+
+
 
 
 
