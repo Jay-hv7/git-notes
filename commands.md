@@ -77,7 +77,19 @@ git log (check if tagging done successfully)
 git tag -d v1.0 (delete the mentioned tag)
 
 
-
+26d2c2b (HEAD -> master, tag: v1.0) updated notes
+be79221 (origin/master) updated notes
+160b7c5 updated notes
+4c64e5b final
+6961b9b 11. last commit of master
+0e7c473 (final) 10. commit final branch
+4e7750d (branch2) 9. commit
+1aae332 8. commit
+d250db1 7. commit
+1b24304 6. commit
+38d2917 3 third commit
+3f51814 2 second commit
+b8f8692 1 first commit
 
 
 ### Detailed Description
