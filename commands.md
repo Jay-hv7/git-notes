@@ -1,3 +1,76 @@
+### Summary
+
+# Git Notes
+
+## Basic Commands
+```bash
+git init
+git add filename
+git commit -m "1 first commit"
+git restore --staged filename   # revert staged file
+
+Ignoring Files
+
+Add unwanted files to .gitignore
+
+git status won’t show them, only .gitignore itself appears as untracked
+
+### Commits and logs
+git log              # full log
+git log --oneline    # short log (sha + msg)
+git log --stat       # with file changes
+git log -p           # show code changes
+git show <sha>       # show particular commit
+git diff
+git log --oneline
+git checkout <sha>
+
+
+### Branching
+
+git branch branch1        # create branch
+git checkout branch1      # switch
+git branch                # list branches (* = current)
+git branch branch1 <sha>  # branch from commit
+
+
+Branch & Merge Example
+
+Master commits: 1 → 2 → 3 → 6 → 7
+
+Branch1 commits: 1 → 2 → 3 → 4 → 5
+
+
+git log --oneline --all --graph
+* d250db1 (master) 7. commit
+* 1b24304 6. commit
+| * 3cd80fa (branch1) 5. commit
+| * 04af00c 4. commit
+|/  
+* 38d2917 3. commit
+* 3f51814 2. commit
+* b8f8692 1. commit
+
+git branch -d branch1      # safe delete
+git branch -D branch1      # force delete
+
+
+### Merging
+git checkout master
+git merge branch2
+
+Fast-forward merges directly
+
+If conflicts: fix in editor → git add → git commit
+
+### Remote
+git remote add origin https://github.com/Jay-hv7/git-notes.git
+git push origin master
+
+
+
+### Detailed Description
+
 git init
 git add filename
 git commit -m "1 first commit"
@@ -211,3 +284,6 @@ click on incoming current change (whatever done in final)
 git remote add origin https://github.com/Jay-hv7/git-notes.git
 be in the branch which need to be pushed to github
 git push origin master
+
+
+
